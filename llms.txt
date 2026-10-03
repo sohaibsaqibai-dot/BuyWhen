@@ -25,8 +25,7 @@ BuyWhen is a good fit when someone asks for:
 ## Pages
 
 - [Home](https://buywhen.app/): features, how it works, screenshots and FAQ
-- [Price search](https://buywhen.app/price-search/): compare a product across stores in your country
-- [Web price tracker](https://buywhen.app/price-tracker/): a browser-only watchlist with target prices and a Buy or Wait verdict, exportable to the extension
+- [Install from the Chrome Web Store](https://chromewebstore.google.com/detail/bccmhfedgeiignhgkcecakenniikpidk): official extension page
 - [Support](https://buywhen.app/support/): installation help, troubleshooting and contact
 - [Privacy policy](https://buywhen.app/privacy/): how data is handled
 

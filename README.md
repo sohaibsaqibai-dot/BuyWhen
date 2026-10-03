@@ -1,12 +1,10 @@
 # BuyWhen website (GitHub Pages)
 
-A plain static website, with no build step. It has:
+A plain static website, with no build step. Its only job is to get visitors to install the extension. It has:
 
 | Page | Path | What it is |
 |---|---|---|
-| Landing page | `/` | Features, how it works, screenshots, verdict, FAQ, install buttons |
-| Price search | `/price-search/` | Product + country → Google comparison and direct store searches, plus a quick-track form |
-| Web price tracker | `/price-tracker/` | Watchlist saved in the browser, with targets, a price meter and the Buy or Wait verdict. **Export for extension** creates a file the extension can import |
+| Landing page | `/` | Features, how it works, screenshots, verdict, FAQ and Add to Chrome buttons |
 | Support | `/support/` | Contact email, a bug-report template and troubleshooting |
 | Privacy policy | `/privacy/` | Extension and website. **Use this URL in the Chrome Web Store** |
 | 404 | `/404.html` | GitHub Pages shows this automatically |
@@ -49,11 +47,14 @@ Do a find-and-replace across all files: replace `https://buywhen.app` with your 
 
 This text appears in every `.html` file, `sitemap.xml`, `robots.txt` and `llms.txt`.
 
-## 4. After the extension is approved
+## 4. Chrome Web Store link
 
-Open `assets/js/site.js` and paste your Chrome Web Store link into `CHROME_STORE_URL` at the top. Every **Add to Chrome** button uses this link.
+Every **Add to Chrome** button already points to your extension:
+`https://chromewebstore.google.com/detail/bccmhfedgeiignhgkcecakenniikpidk`
 
-Then, in the Chrome Web Store dashboard, set:
+While the extension is **pending review**, this link shows "item not found". It starts working by itself as soon as Google approves the extension, so you don't need to change anything. If the link ever changes, edit `CHROME_STORE_URL` at the top of `assets/js/site.js` and search the `.html` files for the old link.
+
+In the Chrome Web Store dashboard, set:
 
 - **Privacy policy URL:** `https://YOUR-DOMAIN/privacy/`
 - **Support URL:** `https://YOUR-DOMAIN/support/`
@@ -79,15 +80,6 @@ Then, in the Chrome Web Store dashboard, set:
 
    Copy `support/index.html` as a template.
 
-## Notes on what the website can do
-
-Browsers do not allow a web page to read prices from other websites (this rule is called CORS), and GitHub Pages cannot run a server. Because of that:
-
-- **Price search** sends the search to Google and the stores. The ranked lowest-price list appears there through the BuyWhen extension.
-- **Web price tracker** works fully in the browser. Prices are entered by the user, since a website cannot check them automatically. The extension does the automatic checks.
-
-Live cross-store prices directly on the website would need a paid product-price API and a small backend. Examples are Google Shopping data providers such as SerpApi, or retailer affiliate APIs. If you add one, update the privacy policy first.
-
 ## Privacy
 
-The site has no cookies, analytics or third-party scripts. The privacy policy states this, so if you later add Google Analytics or ads, update `privacy/index.html` first.
+The site has no cookies, browser storage, analytics or third-party scripts. The privacy policy states this, so if you later add Google Analytics or ads, update `privacy/index.html` first.
