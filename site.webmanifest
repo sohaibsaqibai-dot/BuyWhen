@@ -1,0 +1,13 @@
+{
+  "name": "BuyWhen",
+  "short_name": "BuyWhen",
+  "description": "Find the lowest price, see price history and buy at the right moment.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#12142b",
+  "theme_color": "#12142b",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

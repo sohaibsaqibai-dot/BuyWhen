@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Online Price Tracker with Target Price Alerts | BuyWhen</title>
+<meta name="description" content="Keep a free price watchlist in your browser. Set a target price, record price changes and get a clear Buy or Wait verdict for each product.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://buywhen.app/price-tracker/">
+<meta name="theme-color" content="#12142b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BuyWhen">
+<meta property="og:title" content="Free Online Price Tracker with Target Price Alerts | BuyWhen">
+<meta property="og:description" content="Keep a free price watchlist in your browser. Set a target price, record price changes and get a clear Buy or Wait verdict for each product.">
+<meta property="og:url" content="https://buywhen.app/price-tracker/">
+<meta property="og:image" content="https://buywhen.app/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online Price Tracker with Target Price Alerts | BuyWhen">
+<meta name="twitter:description" content="Keep a free price watchlist in your browser. Set a target price, record price changes and get a clear Buy or Wait verdict for each product.">
+<meta name="twitter:image" content="https://buywhen.app/assets/img/og-image.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../assets/fonts/sora-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="alternate" type="text/plain" title="LLM summary" href="../llms.txt">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../" aria-label="BuyWhen home"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#2b2f66"/><path d="M20 30H40V47H58V66H70" fill="none" stroke="#fff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="66" r="9.5" fill="#ffc233"/></svg>BuyWhen</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="../#features">Features</a>
+    <a href="../price-search/">Price search</a>
+    <a href="../price-tracker/" aria-current="page">Price tracker</a>
+    <a href="../support/">Support</a>
+    <a class="btn gold sm" data-install href="https://chromewebstore.google.com/search/BuyWhen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.97 13.75 4.85 6.6M15.03 13.75 10.9 20.9"/></svg>Add to Chrome</a>
+  </nav>
+</div></header>
+<main id="main">
+<section class="mast"><div class="wrap">
+  <span class="eyebrow">Web price tracker</span>
+  <h1>Your price watchlist, in the browser</h1>
+  <p>Add products, set the price you want and get a Buy or Wait verdict as you update prices. Everything is saved in this browser only.</p>
+</div></section>
+<div class="wrap" style="padding-block:40px 80px">
+  <div class="tracker">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <form class="panel form" id="add" autocomplete="off">
+        <h2>Add a product</h2>
+        <label class="field">Product name<input class="input" name="title" required maxlength="160" placeholder="e.g. Sony WH-1000XM6"></label>
+        <label class="field">Product link (optional)<input class="input" name="url" type="url" inputmode="url" placeholder="https://store.com/product"></label>
+        <div class="row2">
+          <label class="field">Price now<input class="input" name="price" inputmode="decimal" required placeholder="1299"></label>
+          <label class="field">Currency<select class="input" name="currency"></select></label>
+        </div>
+        <div class="field">Alert me at
+          <div class="chips" role="group" aria-label="Target discount">
+            <button type="button" class="chip" data-pct="5" aria-pressed="false">−5%</button>
+            <button type="button" class="chip" data-pct="10" aria-pressed="true">−10%</button>
+            <button type="button" class="chip" data-pct="15" aria-pressed="false">−15%</button>
+            <button type="button" class="chip" data-pct="20" aria-pressed="false">−20%</button>
+          </div>
+          <input class="input" name="target" inputmode="decimal" placeholder="Target price" aria-label="Target price">
+        </div>
+        <p class="save-line" id="save-line"></p>
+        <button class="btn primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>Add to watchlist</button>
+      </form>
+      <aside class="upsell">
+        <h3>Want automatic price checks?</h3>
+        <p>The BuyWhen extension checks prices for you in the background, builds the history on its own and sends a notification when your price is reached.</p>
+        <a class="btn gold sm" data-install href="https://chromewebstore.google.com/search/BuyWhen" style="align-self:flex-start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.97 13.75 4.85 6.6M15.03 13.75 10.9 20.9"/></svg>Add to Chrome</a>
+      </aside>
+    </div>
+    <section aria-labelledby="wl">
+      <div class="toolbar">
+        <h2 id="wl">Watchlist <span class="meta" id="count"></span></h2>
+        <div class="chips">
+          <button class="chip" id="export" type="button" title="Download a file you can import in the BuyWhen extension">Export for extension</button>
+          <label class="chip" for="import" style="cursor:pointer">Import</label>
+          <input id="import" type="file" accept="application/json,.json" hidden>
+          <button class="chip" id="clear" type="button">Delete all</button>
+        </div>
+      </div>
+      <div class="items" id="items"></div>
+      <p class="meta" style="margin-top:14px">Tip: update a product’s price whenever you see it change. The verdict appears after 3 prices over at least 2 days. To move your list into the extension, press <b>Export for extension</b>, then in BuyWhen open <b>Dashboard → Settings → Import</b> (products need a link).</p>
+    </section>
+  </div>
+</div>
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="brand" href="../"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#2b2f66"/><path d="M20 30H40V47H58V66H70" fill="none" stroke="#fff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="66" r="9.5" fill="#ffc233"/></svg>BuyWhen</a>
+      <p>Find the lowest price, see the price history and buy at the right moment. Free for Chrome.</p>
+    </div>
+    <div><h4>Product</h4><ul>
+      <li><a href="../#features">Features</a></li>
+      <li><a href="../#how">How it works</a></li>
+      <li><a href="../price-search/">Price search</a></li>
+      <li><a href="../price-tracker/">Web price tracker</a></li>
+    </ul></div>
+    <div><h4>Help</h4><ul>
+      <li><a href="../support/">Support</a></li>
+      <li><a href="../#faq">FAQ</a></li>
+      <li><a href="../privacy/">Privacy policy</a></li>
+      <li><a href="mailto:sohaibsaqibai@gmail.com">Email us</a></li>
+    </ul></div>
+    <div><h4>Get BuyWhen</h4><ul>
+      <li><a data-install href="https://chromewebstore.google.com/search/BuyWhen">Chrome Web Store</a></li>
+      <li><a href="../llms.txt">llms.txt</a></li>
+    </ul></div>
+  </div>
+  <div class="fine">
+    <span>© <span data-year>2026</span> BuyWhen · Made by Sohaib Saqib</span>
+    <span>BuyWhen is independent and not affiliated with Google or any store named on this site.</span>
+  </div>
+</div></footer>
+<script type="module" src="../assets/js/site.js"></script>
+<script type="module" src="../assets/js/tracker.js"></script>
+</body>
+</html>

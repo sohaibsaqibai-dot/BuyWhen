@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuyWhen: Price Tracker, Price History & Price Drop Alerts for Chrome</title>
+<meta name="description" content="Compare store prices on Google, see the price history of any product and get price drop alerts with a clear Buy or Wait verdict. Free Chrome extension.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://buywhen.app/">
+<meta name="theme-color" content="#12142b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BuyWhen">
+<meta property="og:title" content="BuyWhen: Price Tracker, Price History & Price Drop Alerts for Chrome">
+<meta property="og:description" content="Compare store prices on Google, see the price history of any product and get price drop alerts with a clear Buy or Wait verdict. Free Chrome extension.">
+<meta property="og:url" content="https://buywhen.app/">
+<meta property="og:image" content="https://buywhen.app/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BuyWhen: Price Tracker, Price History & Price Drop Alerts for Chrome">
+<meta name="twitter:description" content="Compare store prices on Google, see the price history of any product and get price drop alerts with a clear Buy or Wait verdict. Free Chrome extension.">
+<meta name="twitter:image" content="https://buywhen.app/assets/img/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/sora-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="alternate" type="text/plain" title="LLM summary" href="llms.txt">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "BuyWhen", "url": "https://buywhen.app/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "BuyWhen", "url": "https://buywhen.app/", "logo": "https://buywhen.app/assets/img/icon-512.png", "email": "sohaibsaqibai@gmail.com", "founder": {"@type": "Person", "name": "Sohaib Saqib"}, "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "sohaibsaqibai@gmail.com", "availableLanguage": ["English"]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "BuyWhen", "alternateName": "BuyWhen Price Tracker", "applicationCategory": "ShoppingApplication", "applicationSubCategory": "Browser extension", "operatingSystem": "Google Chrome, Microsoft Edge, Brave", "url": "https://buywhen.app/", "description": "Free browser extension that compares store prices on Google search, tracks the price of any product on any website, keeps price history and sends price drop alerts with a clear Buy or Wait verdict.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": ["Lowest price across stores on Google search results", "Price history chart", "Buy or Wait verdict", "Price drop alerts", "Track any product on any website", "Click-to-pick price tool", "Local-only data storage"], "screenshot": ["https://buywhen.app/assets/img/screenshot-1.webp", "https://buywhen.app/assets/img/screenshot-2.webp", "https://buywhen.app/assets/img/screenshot-3.webp", "https://buywhen.app/assets/img/screenshot-4.webp", "https://buywhen.app/assets/img/screenshot-5.webp"], "author": {"@type": "Person", "name": "Sohaib Saqib"}, "image": "https://buywhen.app/assets/img/icon-512.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is BuyWhen free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. BuyWhen is free to install and use. There is no account, no subscription and no paid tier."}}, {"@type": "Question", "name": "How does BuyWhen find the lowest price?", "acceptedAnswer": {"@type": "Answer", "text": "When you search for a product on Google, BuyWhen reads the shopping offers already shown on that results page and lists them from lowest to highest price. It separates the exact product from similar models, leaves out monthly instalment prices and flags prices that look unusually low."}}, {"@type": "Question", "name": "Which websites can I track?", "acceptedAnswer": {"@type": "Answer", "text": "Almost any online store. BuyWhen reads the price from the product page automatically on most stores. If it cannot find the price, use “Pick price on page” and click the price yourself."}}, {"@type": "Question", "name": "How does the Buy or Wait verdict work?", "acceptedAnswer": {"@type": "Answer", "text": "BuyWhen compares today’s price with the price history it has collected. If the price is at or below your target it says Buy now. Near the lowest price seen it says Good time. Well above the usual price, or right after a jump, it says Wait."}}, {"@type": "Question", "name": "How do price drop alerts work?", "acceptedAnswer": {"@type": "Answer", "text": "Set the price you want to pay. BuyWhen checks your tracked products in the background (every 6 hours by default) and shows a Chrome notification when the price reaches your target or drops by the amount you choose."}}, {"@type": "Question", "name": "Does BuyWhen collect my data?", "acceptedAnswer": {"@type": "Answer", "text": "No. BuyWhen has no servers, no analytics and no ads. Your watchlist, price history and settings stay in your browser on your device. Read the privacy policy for full details."}}, {"@type": "Question", "name": "Which countries does BuyWhen work in?", "acceptedAnswer": {"@type": "Answer", "text": "Tracking works on stores worldwide. The price comparison panel works on Google search in many countries, including the UAE, Saudi Arabia, the United States, the United Kingdom, India, Pakistan, Germany, France, Canada and Australia."}}, {"@type": "Question", "name": "Does BuyWhen add affiliate links?", "acceptedAnswer": {"@type": "Answer", "text": "No. Buy buttons go straight to the store’s own page. BuyWhen does not add affiliate tags or change the links you click."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./" aria-label="BuyWhen home"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#2b2f66"/><path d="M20 30H40V47H58V66H70" fill="none" stroke="#fff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="66" r="9.5" fill="#ffc233"/></svg>BuyWhen</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#features">Features</a>
+    <a href="price-search/">Price search</a>
+    <a href="price-tracker/">Price tracker</a>
+    <a href="support/">Support</a>
+    <a class="btn gold sm" data-install href="https://chromewebstore.google.com/search/BuyWhen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.97 13.75 4.85 6.6M15.03 13.75 10.9 20.9"/></svg>Add to Chrome</a>
+  </nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Free price tracker for Chrome</span>
+    <h1>Find the lowest price. Buy at the <em>right moment.</em></h1>
+    <p class="lede">BuyWhen lines up every store’s price on Google, keeps the price history of anything you follow, and tells you when it is time to buy.</p>
+    <form class="search" action="price-search/" method="get" role="search" data-search>
+      <label class="sr" for="hq">Product to compare</label>
+      <input class="input" id="hq" type="search" name="q" placeholder="Search a product, e.g. iPhone 17 256GB" required autocomplete="off">
+      <label class="sr" for="hr">Your country</label>
+      <select class="input" id="hr" name="r"><option value="us">United States</option></select>
+      <button class="btn primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Compare prices</button>
+    </form>
+    <p class="hint">Shows the Google comparison and the main stores in your country. With the extension, every store’s price is ranked for you.</p>
+    <div class="cta">
+      <a class="btn gold" data-install href="https://chromewebstore.google.com/search/BuyWhen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.97 13.75 4.85 6.6M15.03 13.75 10.9 20.9"/></svg>Add to Chrome, it’s free</a>
+      <a class="btn ghost-dark" href="price-tracker/">Try the web tracker</a>
+    </div>
+    <div class="trust"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v9H5v-9"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg>Free</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No account needed</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Your data stays on your device</span></div>
+  </div>
+  <div class="hero-art"><img src="assets/img/screenshot-1.webp" width="1280" height="800" alt="BuyWhen panel on Google listing one product's prices from several stores, lowest first" fetchpriority="high"></div>
+</div></section>
+
+<section class="band" id="features"><div class="wrap">
+  <div class="head center"><span class="kicker">Features</span><h2>Everything you need to stop overpaying</h2><p>One small extension that compares, remembers and watches prices for you.</p></div>
+  <div class="grid c3">
+    <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 7a4 4 0 0 0 6 0L5 7z"/><path d="m19 7-3 7a4 4 0 0 0 6 0l-3-7z"/></svg></span><h3>Lowest price on Google</h3><p>Search a product and see every store’s offer side by side, sorted from lowest to highest, with the exact model kept apart from look-alikes.</p></article>
+    <article class="card"><span class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></span><h3>Price history</h3><p>An interactive chart for each product you follow shows the low, the high and the usual price over 7 days, 30 days, 90 days or all time.</p></article>
+    <article class="card"><span class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>Buy or Wait verdict</h3><p>A plain answer for every product: Buy now, Good time, Fair price or Wait, with the reason written out.</p></article>
+    <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span><h3>Price drop alerts</h3><p>Choose −5%, −10%, −15%, −20% or type your own price. A notification arrives when the price gets there.</p></article>
+    <article class="card"><span class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 4 7 17 2.5-7.5L21 11 4 4z"/></svg></span><h3>Track any website</h3><p>Works on most online stores automatically. On the rest, click the price once with the picker and BuyWhen remembers where to look.</p></article>
+    <article class="card"><span class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><h3>Buy now or Track</h3><p>Every offer has both buttons. Buy straight from the store, or start tracking without leaving the results page.</p></article>
+  </div>
+</div></section>
+
+<section class="band alt" id="how"><div class="wrap">
+  <div class="head center"><span class="kicker">How it works</span><h2>Three steps to the right price</h2></div>
+  <ol class="steps">
+    <li><h3>Search or open a product</h3><p>Search on Google to compare stores, or open any product page you like.</p></li>
+    <li><h3>Set the price you want</h3><p>Pick a percentage or type a price. BuyWhen saves the product and starts its price history.</p></li>
+    <li><h3>Buy when it says so</h3><p>BuyWhen checks in the background and alerts you when the price reaches your target.</p></li>
+  </ol>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="show">
+    <div class="show-text"><span class="kicker">Compare</span><h3>Same product, every store, one list</h3><p>BuyWhen reads the offers Google already shows and puts the lowest one on top.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Exact, Similar and All filters, plus storage size and “New only”</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Monthly instalment prices are left out of the ranking</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Unusually low prices are flagged, not ranked first</span></li></ul></div>
+    <img src="assets/img/screenshot-2.webp" width="1280" height="800" loading="lazy" alt="One product's offers from five stores ranked by price">
+  </div>
+  <div class="show flip">
+    <div class="show-text"><span class="kicker">Alerts</span><h3>Set your price and get on with your day</h3><p>Tell BuyWhen what you want to pay. It shows how much you save and alerts you the moment the price drops there.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>One-tap −5% to −20% targets, or type any price</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Background checks every 6 hours, or as often as you choose</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>A deal log of every drop, rise and target reached</span></li></ul></div>
+    <img src="assets/img/screenshot-3.webp" width="1280" height="800" loading="lazy" alt="Setting a target price with percentage chips and a savings line">
+  </div>
+  <div class="show">
+    <div class="show-text"><span class="kicker">Verdict</span><h3>Know exactly when to buy</h3><p>The price meter shows where today’s price sits between the lowest and highest seen, with your target marked.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Buy now, Good time, Fair price or Wait</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Interactive price history chart</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Clear reasons, not just a colour</span></li></ul></div>
+    <img src="assets/img/screenshot-4.webp" width="1280" height="800" loading="lazy" alt="Price history chart with a Buy or Wait verdict">
+  </div>
+  <div class="show flip">
+    <div class="show-text"><span class="kicker">Any store</span><h3>Track products on almost any site</h3><p>Fashion, electronics, furniture, groceries. If the store shows a price, BuyWhen can follow it.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Reads product data the way search engines do</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Click-to-pick tool for unusual pages</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Many products at once, with search, filters and sorting</span></li></ul></div>
+    <img src="assets/img/screenshot-5.webp" width="1280" height="800" loading="lazy" alt="Watchlist with several tracked products from different stores">
+  </div>
+</div></section>
+
+<section class="band alt"><div class="wrap">
+  <div class="head center"><span class="kicker">The verdict</span><h2>A straight answer for every price</h2><p>Based on the price history BuyWhen has collected for that product.</p></div>
+  <div class="verdicts">
+    <div class="v"><span class="pill buy">Buy now</span><b>Your price is here</b><p>At or below the target you set.</p></div>
+    <div class="v"><span class="pill buy">Good time</span><b>Near the low</b><p>Within 3% of the lowest price seen.</p></div>
+    <div class="v"><span class="pill fair">Fair price</span><b>About usual</b><p>Close to its typical price.</p></div>
+    <div class="v"><span class="pill wait">Wait</span><b>Too high right now</b><p>10% or more above usual, or it just jumped.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="head center"><span class="kicker">On this website</span><h2>Try BuyWhen right here</h2><p>Two tools that work in any browser, even before you install the extension.</p></div>
+  <div class="grid c2">
+    <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><h3>Price search</h3><p>Type a product and your country. Open the Google comparison in one click, or jump straight to the search page of the main stores near you.</p><a class="btn primary" href="price-search/" style="align-self:flex-start">Open price search<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    <article class="card"><span class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span><h3>Web price tracker</h3><p>Keep a watchlist with target prices and a Buy or Wait verdict. Saved in your browser only. Move it into the extension any time for automatic checks.</p><a class="btn" href="price-tracker/" style="align-self:flex-start">Open price tracker<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="wrap">
+  <div class="head center"><span class="kicker">Privacy</span><h2>Private by design</h2></div>
+  <div class="grid c3">
+    <article class="card"><span class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Stays on your device</h3><p>Your watchlist, history and settings are stored in your browser. BuyWhen has no servers that receive them.</p></article>
+    <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3>Access only when you ask</h3><p>Store access is requested per store, when you choose to track something there. You can remove it any time.</p></article>
+    <article class="card"><span class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v9H5v-9"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span><h3>No ads, no selling</h3><p>No analytics, no ads, no affiliate links and no data sales. <a href="privacy/">Read the privacy policy</a>.</p></article>
+  </div>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+  <div class="head center"><span class="kicker">FAQ</span><h2>Questions shoppers ask</h2></div>
+  <div class="faq">
+    <details><summary>Is BuyWhen free?</summary><p>Yes. BuyWhen is free to install and use. There is no account, no subscription and no paid tier.</p></details><details><summary>How does BuyWhen find the lowest price?</summary><p>When you search for a product on Google, BuyWhen reads the shopping offers already shown on that results page and lists them from lowest to highest price. It separates the exact product from similar models, leaves out monthly instalment prices and flags prices that look unusually low.</p></details><details><summary>Which websites can I track?</summary><p>Almost any online store. BuyWhen reads the price from the product page automatically on most stores. If it cannot find the price, use “Pick price on page” and click the price yourself.</p></details><details><summary>How does the Buy or Wait verdict work?</summary><p>BuyWhen compares today’s price with the price history it has collected. If the price is at or below your target it says Buy now. Near the lowest price seen it says Good time. Well above the usual price, or right after a jump, it says Wait.</p></details><details><summary>How do price drop alerts work?</summary><p>Set the price you want to pay. BuyWhen checks your tracked products in the background (every 6 hours by default) and shows a Chrome notification when the price reaches your target or drops by the amount you choose.</p></details><details><summary>Does BuyWhen collect my data?</summary><p>No. BuyWhen has no servers, no analytics and no ads. Your watchlist, price history and settings stay in your browser on your device. Read the privacy policy for full details.</p></details><details><summary>Which countries does BuyWhen work in?</summary><p>Tracking works on stores worldwide. The price comparison panel works on Google search in many countries, including the UAE, Saudi Arabia, the United States, the United Kingdom, India, Pakistan, Germany, France, Canada and Australia.</p></details><details><summary>Does BuyWhen add affiliate links?</summary><p>No. Buy buttons go straight to the store’s own page. BuyWhen does not add affiliate tags or change the links you click.</p></details>
+  </div>
+</div></section>
+
+<section class="band" style="padding-top:0"><div class="wrap">
+  <div class="cta-band">
+    <div><h2>Stop guessing. Buy when the price is right.</h2><p>Free for Chrome, Edge and Brave. Ready in seconds.</p></div>
+    <div class="row"><a class="btn gold" data-install href="https://chromewebstore.google.com/search/BuyWhen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.97 13.75 4.85 6.6M15.03 13.75 10.9 20.9"/></svg>Add to Chrome</a><a class="btn ghost-dark" href="support/">Get help</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="brand" href="./"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#2b2f66"/><path d="M20 30H40V47H58V66H70" fill="none" stroke="#fff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="66" r="9.5" fill="#ffc233"/></svg>BuyWhen</a>
+      <p>Find the lowest price, see the price history and buy at the right moment. Free for Chrome.</p>
+    </div>
+    <div><h4>Product</h4><ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="price-search/">Price search</a></li>
+      <li><a href="price-tracker/">Web price tracker</a></li>
+    </ul></div>
+    <div><h4>Help</h4><ul>
+      <li><a href="support/">Support</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="privacy/">Privacy policy</a></li>
+      <li><a href="mailto:sohaibsaqibai@gmail.com">Email us</a></li>
+    </ul></div>
+    <div><h4>Get BuyWhen</h4><ul>
+      <li><a data-install href="https://chromewebstore.google.com/search/BuyWhen">Chrome Web Store</a></li>
+      <li><a href="llms.txt">llms.txt</a></li>
+    </ul></div>
+  </div>
+  <div class="fine">
+    <span>© <span data-year>2026</span> BuyWhen · Made by Sohaib Saqib</span>
+    <span>BuyWhen is independent and not affiliated with Google or any store named on this site.</span>
+  </div>
+</div></footer>
+<script type="module" src="assets/js/site.js"></script>
+</body>
+</html>
