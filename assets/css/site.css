@@ -275,3 +275,20 @@ code { font-size: 14px; background: var(--surface-2); padding: 1px 6px; border-r
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Two ways (Buy now / Track) */
+.ways { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.way { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; display: flex; flex-direction: column; gap: 12px; border-top: 5px solid var(--gold); }
+.way.track { border-top-color: var(--brand); }
+.way-top { display: flex; align-items: center; gap: 12px; }
+.way .num { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font: 800 18px var(--f-display); background: var(--gold); color: var(--ink); }
+.way.track .num { background: var(--brand); color: #fff; }
+.way h3 { font-size: clamp(22px, 2.4vw, 28px); }
+.way p { color: var(--muted); font-size: 17px; }
+.way ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.way li { display: flex; gap: 10px; align-items: flex-start; }
+.way li svg { width: 20px; height: 20px; color: var(--buy); flex: none; margin-top: 3px; }
+.way img { border-radius: 14px; border: 1px solid var(--line); margin-top: 8px; width: 100%; height: auto; }
+@media (max-width: 900px) { .ways { grid-template-columns: 1fr; } }
+.hero-art img { width: 100%; height: auto; }
+section[id] { scroll-margin-top: 72px; }
